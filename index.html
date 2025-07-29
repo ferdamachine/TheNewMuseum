@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New Museum</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-repeat: repeat;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    marquee {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      color: cyan;
+      margin: 0 15px;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 10px;
+      color: gray;
+      margin-top: 60px;
+    }
+    .audio-player {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <marquee behavior="scroll" direction="left">Welcome to The New Museum — Where Fear and Aesthetics Collide</marquee>
+      <h1>🕷️ The New Museum 🕷️</h1>
+      <p><em>an archive of digital unease</em></p>
+    </header>
+
+    <nav>
+      <a href="archive.html">🖼️ Archive</a>
+      <a href="fearpoker.html">🎵 Playlist</a>
+      <a href="about.html">📖 About</a>
+    </nav>
+
+    <main>
+      <p>Enter the liminal halls of our cursed digital collection. Turn back if you value your peace.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Saturn_Devouring_Son.jpg" alt="Saturn Devouring His Son" width="300">
+      <p><small>"Saturn Devouring His Son" — Francisco Goya</small></p>
+    </main>
+
+    <footer>
+      <p>© 2004–2025 The New Museum. Best viewed in Netscape Navigator 4.0 or IE6.</p>
+      <p>Visitor #13</p>
+    </footer>
+  </div>
+
+  <audio class="audio-player" autoplay loop>
+    <source src="fear-inducing-poker.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
