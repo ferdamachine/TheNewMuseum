@@ -8,10 +8,8 @@
   <style>
     body {
       background-color: black;
-      color: lime;
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-      background-repeat: repeat;
+      color: beige;
+      font-family: "Times New Roman", serif;
       margin: 0;
       padding: 0;
     }
@@ -33,9 +31,10 @@
       margin: 20px 0;
     }
     nav a {
-      color: cyan;
+      color: beige;
       margin: 0 15px;
       text-decoration: underline;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -46,14 +45,27 @@
     .audio-player {
       display: none;
     }
+    .subtitle {
+      font-family: Papyrus, fantasy;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .fire-gif {
+      width: 40px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <marquee behavior="scroll" direction="left">Welcome to The New Museum — Where Fear and Aesthetics Collide</marquee>
-      <h1>🕷️ The New Museum 🕷️</h1>
-      <p><em>an archive of digital unease</em></p>
+      <marquee behavior="scroll" direction="left"></marquee>
+      <h1>
+        <img class="fire-gif" src="https://i.imgur.com/XhNRXpv.gif" alt="fire">
+        <strong>The New Museum</strong>
+        <img class="fire-gif" src="https://i.imgur.com/XhNRXpv.gif" alt="fire">
+      </h1>
+      <p class="subtitle">a digital archives of impressive works</p>
     </header>
 
     <nav>
@@ -63,15 +75,20 @@
     </nav>
 
     <main>
-      <p>Enter the liminal halls of our cursed digital collection. Turn back if you value your peace.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Saturn_Devouring_Son.jpg" alt="Saturn Devouring His Son" width="300">
-      <p><small>"Saturn Devouring His Son" — Francisco Goya</small></p>
+      <p><strong>Experience art and music like never before with this interactive installation of works comprising of both sonic and visual mediums.</strong></p>
+      <img src="https://i.imgur.com/8xL6lCk.png" alt="Saturn Devouring His Son" width="300">
+      <p class="subtitle">"Saturn Devouring His Son" — Francisco Goya</p>
     </main>
 
     <footer>
       <p>© 2004–2025 The New Museum. Best viewed in Netscape Navigator 4.0 or IE6.</p>
       <p>Visitor #13</p>
     </footer>
+
+    <!-- Apple Music Embed -->
+    <div style="margin-top: 40px; text-align: center;">
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/fear-inducing-poker-playlist/pl.u-gxblk8DFxJZVA8m"></iframe>
+    </div>
   </div>
 
   <audio class="audio-player" autoplay loop>
